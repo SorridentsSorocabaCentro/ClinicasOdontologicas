@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prótese Dentária em Sorocaba | Sorridents Centro</title>
+  <meta name="description" content="Recupere seu sorriso com próteses dentárias de qualidade em Sorocaba. Agende agora pelo WhatsApp!" />
+
+  <!-- ============================================================
+    ✅ PASSO 1: Cole aqui a tag do Google Ads (gtag.js)
+    Substitua G-XXXXXXXXXX pelo seu ID de conversão real.
+    Você encontra em: Google Ads > Ferramentas > Conversões > (sua ação) > Configurar tag
+  ============================================================ -->
+  <!-- Global site tag (gtag.js) - Google Ads -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-6179008009"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'AW-6179008009'); // ← substitua pelo seu ID
+  </script>
+
+  <!-- ============================================================
+    ✅ PASSO 2: Função de conversão do WhatsApp
+    Substitua AW-6179008009/YYYYYYYYYYY pelo ID da sua ação de conversão.
+    Você encontra em: Google Ads > Conversões > (sua ação) > Snippet de tag
+  ============================================================ -->
+  <script>
+    function registrarConversaoWhatsApp() {
+      gtag('event', 'conversion', {
+        'send_to': 'AW-6179008009/YYYYYYYYYYY' // ← substitua pelos seus IDs
+      });
+    }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --cream:    #FAF7F2;
+      --white:    #FFFFFF;
+      --navy:     #0D2340;
+      --navy-mid: #163554;
+      --gold:     #C8943A;
+      --gold-lt:  #E8B86D;
+      --green:    #25D366;
+      --green-dk: #1DAA54;
+      --text:     #2C2C2C;
+      --muted:    #6B7280;
+      --border:   #E5DDD0;
+      --radius:   16px;
+      --shadow:   0 8px 40px rgba(13,35,64,.10);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* ── HEADER ── */
+    header {
+      background: var(--navy);
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 20px rgba(0,0,0,.3);
+    }
+
+    .logo-area {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo-icon {
+      width: 42px;
+      height: 42px;
+      background: var(--gold);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+    }
+
+    .logo-text {
+      color: var(--white);
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem;
+      line-height: 1.2;
+    }
+
+    .logo-text span {
+      display: block;
+      font-size: .7rem;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 400;
+      color: var(--gold-lt);
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .header-cta {
+      background: var(--green);
+      color: var(--white);
+      border: none;
+      padding: 10px 20px;
+      border-radius: 50px;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 600;
+      font-size: .9rem;
+      cursor: pointer;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: background .2s, transform .15s;
+    }
+
+    .header-cta:hover { background: var(--green-dk); transform: scale(1.03); }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 60%, #1a4a70 100%);
+      padding: 64px 24px 80px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(200,148,58,.18) 0%, transparent 70%);
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(200,148,58,.2);
+      border: 1px solid rgba(200,148,58,.4);
+      color: var(--gold-lt);
+      padding: 6px 16px;
+      border-radius: 50px;
+      font-size: .8rem;
+      font-weight: 600;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+      position: relative;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.2rem, 6vw, 3.4rem);
+      color: var(--white);
+      line-height: 1.15;
+      max-width: 680px;
+      margin: 0 auto 20px;
+      position: relative;
+    }
+
+    .hero h1 em {
+      font-style: normal;
+      color: var(--gold-lt);
+    }
+
+    .hero p {
+      color: rgba(255,255,255,.75);
+      font-size: 1.05rem;
+      max-width: 520px;
+      margin: 0 auto 36px;
+      position: relative;
+      font-weight: 300;
+    }
+
+    .cta-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--green);
+      color: var(--white);
+      text-decoration: none;
+      padding: 18px 36px;
+      border-radius: 50px;
+      font-weight: 700;
+      font-size: 1.1rem;
+      transition: background .2s, transform .15s, box-shadow .2s;
+      box-shadow: 0 4px 24px rgba(37,211,102,.35);
+      position: relative;
+    }
+
+    .cta-primary:hover {
+      background: var(--green-dk);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 32px rgba(37,211,102,.45);
+    }
+
+    .cta-subtext {
+      color: rgba(255,255,255,.5);
+      font-size: .8rem;
+      margin-top: 14px;
+      position: relative;
+    }
+
+    /* ── SOCIAL PROOF BAR ── */
+    .proof-bar {
+      background: var(--gold);
+      padding: 14px 24px;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .proof-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--navy);
+      font-weight: 600;
+      font-size: .9rem;
+    }
+
+    .proof-item .icon { font-size: 1.1rem; }
+
+    /* ── SECTION GENERIC ── */
+    section { padding: 64px 24px; }
+
+    .container { max-width: 860px; margin: 0 auto; }
+
+    .section-tag {
+      display: inline-block;
+      background: rgba(200,148,58,.12);
+      color: var(--gold);
+      border: 1px solid rgba(200,148,58,.3);
+      font-size: .75rem;
+      font-weight: 700;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 50px;
+      margin-bottom: 16px;
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.7rem, 4vw, 2.4rem);
+      color: var(--navy);
+      line-height: 1.25;
+      margin-bottom: 12px;
+    }
+
+    .section-sub {
+      color: var(--muted);
+      font-size: 1rem;
+      max-width: 560px;
+      font-weight: 300;
+    }
+
+    /* ── BENEFÍCIOS ── */
+    .beneficios { background: var(--white); }
+
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .benefit-card {
+      background: var(--cream);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 28px 24px;
+      transition: transform .2s, box-shadow .2s;
+    }
+
+    .benefit-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow);
+    }
+
+    .benefit-icon {
+      width: 52px;
+      height: 52px;
+      background: var(--navy);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      margin-bottom: 16px;
+    }
+
+    .benefit-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      color: var(--navy);
+      margin-bottom: 8px;
+    }
+
+    .benefit-card p {
+      color: var(--muted);
+      font-size: .92rem;
+      line-height: 1.6;
+    }
+
+    /* ── TIPOS DE PRÓTESE ── */
+    .proteses { background: var(--cream); }
+
+    .proteses-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .protese-item {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 24px;
+      border-left: 4px solid var(--gold);
+      box-shadow: 0 2px 12px rgba(0,0,0,.05);
+    }
+
+    .protese-item h3 {
+      color: var(--navy);
+      font-weight: 600;
+      font-size: 1rem;
+      margin-bottom: 6px;
+    }
+
+    .protese-item p {
+      color: var(--muted);
+      font-size: .88rem;
+    }
+
+    /* ── FOTOS ── */
+    .fotos { background: var(--navy); }
+
+    .fotos .section-title { color: var(--white); }
+    .fotos .section-sub   { color: rgba(255,255,255,.6); }
+    .fotos .section-tag   {
+      background: rgba(200,148,58,.25);
+      color: var(--gold-lt);
+      border-color: rgba(200,148,58,.4);
+    }
+
+    .photo-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 36px;
+    }
+
+    .photo-slot {
+      background: var(--navy-mid);
+      border-radius: 12px;
+      aspect-ratio: 4/3;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255,255,255,.35);
+      font-size: .78rem;
+      text-align: center;
+      gap: 8px;
+      border: 2px dashed rgba(200,148,58,.25);
+      padding: 12px;
+      cursor: pointer;
+      transition: border-color .2s;
+    }
+
+    .photo-slot:hover { border-color: var(--gold); }
+    .photo-slot .ps-icon { font-size: 1.8rem; opacity: .5; }
+
+    .photo-slot img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    /* ── DEPOIMENTOS ── */
+    .depoimentos { background: var(--white); }
+
+    .depo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .depo-card {
+      background: var(--cream);
+      border-radius: var(--radius);
+      padding: 28px 24px;
+      border: 1px solid var(--border);
+      position: relative;
+    }
+
+    .depo-card::before {
+      content: '"';
+      font-family: 'Playfair Display', serif;
+      font-size: 5rem;
+      color: var(--gold);
+      opacity: .25;
+      position: absolute;
+      top: 8px;
+      left: 18px;
+      line-height: 1;
+    }
+
+    .depo-stars { color: var(--gold); font-size: 1rem; margin-bottom: 12px; }
+
+    .depo-text {
+      color: var(--text);
+      font-size: .92rem;
+      line-height: 1.7;
+      margin-bottom: 18px;
+      font-style: italic;
+    }
+
+    .depo-author {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .depo-avatar {
+      width: 40px;
+      height: 40px;
+      background: var(--navy);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      font-weight: 700;
+      font-size: .9rem;
+    }
+
+    .depo-name { font-weight: 600; font-size: .88rem; color: var(--navy); }
+    .depo-proc { font-size: .78rem; color: var(--muted); }
+
+    /* ── CTA FINAL ── */
+    .cta-section {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-mid) 100%);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 70% 80% at 50% 100%, rgba(200,148,58,.15) 0%, transparent 70%);
+    }
+
+    .cta-section .section-title { color: var(--white); }
+
+    .cta-section p {
+      color: rgba(255,255,255,.65);
+      max-width: 480px;
+      margin: 12px auto 36px;
+      font-weight: 300;
+      position: relative;
+    }
+
+    .cta-section .cta-primary { position: relative; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: #080F1A;
+      color: rgba(255,255,255,.4);
+      text-align: center;
+      padding: 24px;
+      font-size: .82rem;
+    }
+
+    footer a { color: var(--gold-lt); text-decoration: none; }
+
+    /* ── STICKY MOBILE CTA ── */
+    .sticky-cta {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: var(--green);
+      color: var(--white);
+      text-align: center;
+      padding: 16px;
+      font-weight: 700;
+      font-size: 1rem;
+      text-decoration: none;
+      z-index: 200;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 -4px 20px rgba(0,0,0,.2);
+    }
+
+    /* ── PULSE ANIMATION ── */
+    @keyframes pulse-green {
+      0%, 100% { box-shadow: 0 4px 24px rgba(37,211,102,.35); }
+      50%       { box-shadow: 0 4px 40px rgba(37,211,102,.65); }
+    }
+
+    .cta-primary { animation: pulse-green 2.5s ease-in-out infinite; }
+
+    /* ── ENTRANCE ANIMATIONS ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(28px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero h1, .hero p, .hero .cta-primary {
+      opacity: 0;
+      animation: fadeUp .7s ease forwards;
+    }
+    .hero h1          { animation-delay: .1s; }
+    .hero p           { animation-delay: .25s; }
+    .hero .cta-primary{ animation-delay: .4s; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 640px) {
+      .proof-bar { gap: 20px; }
+      .photo-grid { grid-template-columns: repeat(2, 1fr); }
+      .sticky-cta { display: flex; }
+      body { padding-bottom: 64px; }
+      .header-cta { display: none; }
+    }
+
+    @media (max-width: 420px) {
+      .photo-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ░░ HEADER ░░ -->
+  <header>
+    <div class="logo-area">
+      <div class="logo-icon">🦷</div>
+      <div class="logo-text">
+        Sorridents
+        <span>Sorocaba Centro</span>
+      </div>
+    </div>
+    <a href="https://wa.me/5515998103809?text=Ol%C3%A1!+Tenho+interesse+em+pr%C3%B3tese+dent%C3%A1ria.+Pode+me+ajudar%3F"
+       class="header-cta"
+       onclick="registrarConversaoWhatsApp()"
+       target="_blank" rel="noopener">
+      <!-- ÍCONE WHATSAPP SVG (não usa img externa) -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+        <path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.112 1.523 5.837L.057 23.49a.75.75 0 00.953.953l5.653-1.466A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.806 9.806 0 01-5.003-1.375l-.36-.213-3.352.87.889-3.242-.234-.374A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/>
+      </svg>
+      Falar pelo WhatsApp
+    </a>
+  </header>
+
+  <!-- ░░ HERO ░░ -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-badge">✨ Especialistas em Próteses</div>
+      <h1>Recupere seu sorriso com <em>prótese dentária</em> em Sorocaba</h1>
+      <p>Atendimento personalizado, preço justo e resultado natural. Agende sua avaliação gratuita agora mesmo.</p>
+      <a href="https://wa.me/5515998103809?text=Ol%C3%A1!+Tenho+interesse+em+pr%C3%B3tese+dent%C3%A1ria.+Pode+me+ajudar%3F"
+         class="cta-primary"
+         onclick="registrarConversaoWhatsApp()"
+         target="_blank" rel="noopener">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+          <path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.112 1.523 5.837L.057 23.49a.75.75 0 00.953.953l5.653-1.466A11.942 11.942 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.806 9.806 0 01-5.003-1.375l-.36-.213-3.352.87.889-3.242-.234-.374A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/>
+        </svg>
+        Agendar Avaliação Gratuita
+      </a>
+      <p class="cta-subtext">Resposta rápida · Sem compromisso · 100% gratuito</p>
+    </div>
+  </section>
+
+  <!-- ░░ PROVA SOCIAL ░░ -->
+  <div class="proof-bar">
+    <div class="proof-item"><span class="icon">⭐</span> +500 pacientes atendidos</div>
+    <div class="proof-item"><span class="icon">🏆</span> Rede Sorridents oficial</div>
+    <div class="proof-item"><span class="icon">📍</span> Sorocaba Centro</div>
+    <div class="proof-item"><span class="icon">✅</span> Avaliação gratuita</div>
+  </div>
+
+  <!-- ░░ BENEFÍCIOS ░░ -->
+  <section class="beneficios">
+    <div class="container">
+      <span class="section-tag">Por que nos escolher</span>
+      <h2 class="section-title">Conforto, estética e<br>qualidade de vida</h2>
+      <p class="section-sub">Devolvemos não só os dentes, mas a confiança de sorrir, mastigar e falar sem preocupação.</p>
+
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="benefit-icon">😊</div>
+          <h3>Resultado Natural</h3>
+          <p>Próteses com aparência idêntica aos dentes naturais, harmonizando cor, forma e tamanho.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">💰</div>
+          <h3>Parcelamento Facilitado</h3>
+          <p>Condições especiais de pagamento para que o tratamento caiba no seu orçamento.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">🔬</div>
+          <h3>Tecnologia Avançada</h3>
+          <p>Materiais de alta qualidade e técnicas modernas para maior durabilidade e conforto.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">👩‍⚕️</div>
+          <h3>Equipe Especializada</h3>
+          <p>Profissionais com experiência específica em reabilitação oral e próteses dentárias.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ TIPOS DE PRÓTESE ░░ -->
+  <section class="proteses">
+    <div class="container">
+      <span class="section-tag">Nossos Tratamentos</span>
+      <h2 class="section-title">Qual é a prótese<br>ideal para você?</h2>
+      <p class="section-sub">Oferecemos diversas soluções para cada necessidade. Nossa equipe indica a melhor opção na avaliação.</p>
+
+      <div class="proteses-list">
+        <div class="protese-item">
+          <h3>🦷 Prótese Total (Dentadura)</h3>
+          <p>Ideal para quem perdeu todos os dentes. Confortável, estável e com aparência natural.</p>
+        </div>
+        <div class="protese-item">
+          <h3>🔗 Prótese Parcial Removível</h3>
+          <p>Substitui um ou mais dentes com encaixe nas peças naturais existentes.</p>
+        </div>
+        <div class="protese-item">
+          <h3>⚙️ Prótese Fixa sobre Implante</h3>
+          <p>Alta durabilidade e sensação mais próxima do dente natural. Indicada para casos específicos.</p>
+        </div>
+        <div class="protese-item">
+          <h3>🌟 Prótese Protocolo</h3>
+          <p>Solução completa para boca totalmente desdentada com fixação em implantes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ FOTOS DA CLÍNICA ░░ -->
+  <section class="fotos">
+    <div class="container">
+      <span class="section-tag">Nossa Clínica</span>
+      <h2 class="section-title">Conheça nosso espaço</h2>
+      <p class="section-sub">Ambiente moderno, confortável e preparado para o seu atendimento em Sorocaba Centro.</p>
+
+      <!-- ============================================================
+        ✅ COMO ADICIONAR SUAS FOTOS:
+        Substitua cada <div class="photo-slot"> por:
+        <div class="photo-slot"><img src="foto1.jpg" alt="Clínica Sorridents" /></div>
+
+        Coloque os arquivos de foto na mesma pasta do index.html.
+        Formatos aceitos: .jpg .jpeg .png .webp
+      ============================================================ -->
+      <div class="photo-grid">
+        <div class="photo-slot">
+          <span class="ps-icon">📷</span>
+          <span>Adicione aqui<br>uma foto da clínica</span>
+        </div>
+        <div class="photo-slot">
+          <span class="ps-icon">📷</span>
+          <span>Foto da recepção<br>ou sala de espera</span>
+        </div>
+        <div class="photo-slot">
+          <span class="ps-icon">📷</span>
+          <span>Foto do consultório<br>ou equipe</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ DEPOIMENTOS ░░ -->
+  <section class="depoimentos">
+    <div class="container">
+      <span class="section-tag">Depoimentos</span>
+      <h2 class="section-title">O que nossos pacientes<br>estão dizendo</h2>
+      <p class="section-sub">Histórias reais de quem recuperou a autoestima com a Sorridents Sorocaba Centro.</p>
+
+      <!-- ============================================================
+        ✅ PERSONALIZE COM DEPOIMENTOS REAIS:
+        Troque os textos abaixo por depoimentos de pacientes reais.
+        Se tiver prints de comentários do Google Maps, use-os aqui.
+      ============================================================ -->
+      <div class="depo-grid">
+        <div class="depo-card">
+          <div class="depo-stars">★★★★★</div>
+          <p class="depo-text">Fiz minha prótese total aqui e estou muito satisfeita. A equipe foi super atenciosa e o resultado ficou lindo, totalmente natural!</p>
+          <div class="depo-author">
+            <div class="depo-avatar">M</div>
+            <div>
+              <div class="depo-name">Maria S.</div>
+              <div class="depo-proc">Prótese Total</div>
+            </div>
+          </div>
+        </div>
+        <div class="depo-card">
+          <div class="depo-stars">★★★★★</div>
+          <p class="depo-text">Tinha vergonha de sorrir há anos. Hoje tenho minha prótese fixa e minha vida mudou completamente. Recomendo demais!</p>
+          <div class="depo-author">
+            <div class="depo-avatar">J</div>
+            <div>
+              <div class="depo-name">João P.</div>
+              <div class="depo-proc">Prótese Fixa</div>
+            </div>
+          </div>
+        </div>
+        <div class="depo-card">
+          <div class="depo-stars">★★★★★</div>
+          <p class="depo-text">Atendimento excelente desde o primeiro contato pelo WhatsApp. Avaliação gratuita, orçamento justo e resultado perfeito.</p>
+          <div class="depo-author">
+            <div class="depo-avatar">A</div>
+            <div>
+              <div class="depo-name">Ana R.</div>
+              <div class="depo-proc">Prótese Parcial</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ░░ CTA FINAL ░░ -->
+  <section class="cta-section">
+    <div class="container">
+      <span class="section-tag" style="background:rgba(200,148,58,.25);color:var(--gold-lt);border-color:rgba(200,148,58,.4);">Próximo passo</span>
+      <h2 class="section-title">Pronto para recuperar<br>seu sorriso?</h2>
+      <p>Agende agora sua avaliação gratuita e descubra a melhor solução para o seu caso. Resposta rápida pelo WhatsApp!</p>
+      <a href="https://wa.me/5515998103809?text=Ol%C3%A1!+Tenho+interesse+em+pr%C3%B3tese+dent%C3%A1ria.+Pode+me+ajudar%3F"
+         class="cta-primary"
+         onclick="registrarConversaoWhatsApp()"
+         target="_blank" rel="noopener">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+          <path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.112 1.523 5.837L.057 23.49a.75.75 0 00.953.953l5.653-1.466A11.942 11.942 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.806 9.806 0 01-5.003-1.375l-.36-.213-3.352.87.889-3.242-.234-.374A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/>
+        </svg>
+        Quero Minha Avaliação Gratuita
+      </a>
+    </div>
+  </section>
+
+  <!-- ░░ FOOTER ░░ -->
+  <footer>
+    <p>© 2026 Sorridents Sorocaba Centro · Todos os direitos reservados</p>
+    <p style="margin-top:6px;">Rua Rodrigues Pacheco, 158. Centro · Sorocaba, SP · <a href="tel:+5515998103809">(15) XXXXX-XXXX</a></p>
+  </footer>
+
+  <!-- ░░ STICKY CTA MOBILE ░░ -->
+  <a href="https://wa.me/5515998103809?text=Ol%C3%A1!+Tenho+interesse+em+pr%C3%B3tese+dent%C3%A1ria.+Pode+me+ajudar%3F"
+     class="sticky-cta"
+     onclick="registrarConversaoWhatsApp()"
+     target="_blank" rel="noopener">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.122.554 4.112 1.523 5.837L.057 23.49a.75.75 0 00.953.953l5.653-1.466A11.942 11.942 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.806 9.806 0 01-5.003-1.375l-.36-.213-3.352.87.889-3.242-.234-.374A9.818 9.818 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/>
+    </svg>
+    Falar no WhatsApp agora
+  </a>
+
+</body>
+</html>
